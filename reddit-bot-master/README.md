@@ -9,8 +9,6 @@
 
 ## Usage
 
-First things first, this bot is rather unstable, meaning it has only been tested on Windows, with my internet conection *etc... etc...*. If you encounter any issues, or have any suggestions, feel free to let me know or contribute yourself.
-
 Currently supported interacions:
 
 - login
@@ -18,21 +16,7 @@ Currently supported interacions:
 - comment under post
 - join/leave community
 
-Work in progress features:
-
-- reply to comment
-- create post
-- upvote/downvote last X posts of user/community
-
 ## Usage
-
-In the desired folder, clone this repository:
-
-    > git clone https://github.com/markmelnic/Reddit-Bot
-
-Install the dependencies:
-
-    > pip install -r requirements.txt
 
 Download the latest chromedriver here https://chromedriver.chromium.org/downloads and extract `chromedriver.exe` in the same directory as this script.
 
@@ -56,19 +40,18 @@ Available flags:
 
 #### Examples:
 
-This will downvote the first post, downvote the second one and comment under it, join "r/ProgrammerHumor" community then leave it.
+This will log into account, reject non-essential cookies, upvote the first post, downvote the second one and comment under it, join "r/ProgrammerHumor" community then leave it.
 
     > py main.py --accounts accounts.txt --links posts.txt
 
 where accounts.txt looks like this:
 
-    testuser1|testpass1
-    testuser2|testpass2
+    lachezarnaa|zarazarazara
 
 and posts.txt looks like this:
 
-    https://www.reddit.com/r/ProgrammerHumor/comments/s0f0wd/were_not_the_same_bro/|upvote
-    https://www.reddit.com/r/ProgrammerHumor/comments/z8ghv8/gotta_save_those_characters/|downvote
-    https://www.reddit.com/r/ProgrammerHumor/comments/z8ghv8/gotta_save_those_characters/|comment|sad
-    https://www.reddit.com/r/ProgrammerHumor/|join
-    https://www.reddit.com/r/ProgrammerHumor/|leave
+https://www.reddit.com/r/rainworld/comments/11nefg8/why_is_this_guy_worth_7_points_lil_baby_centipede/?utm_source=share&utm_medium=web2x&context=3|upvote
+https://www.reddit.com/r/ProgrammerHumor/comments/z8ghv8/gotta_save_those_characters/|downvote
+https://www.reddit.com/r/ProgrammerHumor/comments/z8ghv8/gotta_save_those_characters/|comment|sad
+https://www.reddit.com/r/ProgrammerHumor/|join
+https://www.reddit.com/r/ProgrammerHumor/|leave
